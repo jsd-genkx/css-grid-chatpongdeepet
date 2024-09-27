@@ -33,3 +33,7 @@ body {
   color: var(--clr-light);
   border: 10px solid var(--clr-accent);
 }
+
+.container-ex0 {
+  border: 10px solid black;
+}

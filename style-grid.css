@@ -1,11 +1,90 @@
 /* exercise 1 */
-
+.container-ex1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 /* exercise 2 */
-
+.container-ex2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
 /* exercise 3 */
-
+.container-ex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+.container-ex3 .item-1 {
+    grid-column: span 2;
+}
 /* exercise 4 */
-
+.container-ex4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+.container-ex4 .item-1 {
+    grid-column: span 2;
+}
+.container-ex4 .item-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 /* exercise 5 */
+.container-ex5 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+}
 
+/* กำหนด item ว่าให้อยู่ใน grid area ไหน */
+.container-ex5 item-1 {
+    grid-area: header;
+}
+.container-ex5 item-2 {
+    grid-area: header;
+}
+.container-ex5 item-3 {
+    grid-area: header;
+}
+.container-ex5 item-4 {
+    grid-area: header;
+}
+.container-ex5 item-5 {
+    grid-area: header;
+}
+.container-ex5 item-6 {
+    grid-area: header;
+}
 /* exercise 6 (optional) - follow the assigned YT video */
+
+.container-ex0 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-ex0 .item-1{
+    grid-row: 1 / 3;
+    grid-column: 1 / 5;
+    height: 300px;
+}
+
+.container-ex0 .item-2{
+    grid-area: 2 / 4 / 4 / 6;
+    z-index: -1
+}
+
+.container-ex0 .item-3{
+    grid-area: 3 / 1/ -2 /-2;
+    }
+
